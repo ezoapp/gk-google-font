@@ -34,15 +34,14 @@
         document.getElementsByTagName("head")[0].appendChild(link);
       };
     }
-  };
+  },
+    factory = function () {
+      $.gk.registry('gfont', gfont);
+    };
 
-  if (typeof define === 'function') {
-    if (typeof define.amd === 'undefined') {
-      define('gfont', gfont);
-    } else {
-      define(gfont);
-    }
+  if (typeof define === 'function' && define.amd) {
+    define(factory);
   } else {
-    return gfont;
+    factory();
   }
 }());
