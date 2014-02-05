@@ -4,7 +4,7 @@
   "authors": [
     "EZoUI <ezoservice@icsc.com.tw>"
   ],
-  "main": "gfont.js",
+  "main": "gfont.html",
   "keywords": [
     "gk",
     "web-components",
@@ -21,6 +21,6 @@
     "tests"
   ],
   "dependencies": {
-    "gk": "../gk"
+    "gk-loader": "../gk-loader"
   }
 }
