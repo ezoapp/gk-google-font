@@ -1,4 +1,4 @@
-<element name="gfont">
+<element name="gk-google-font">
 
   <template>
     <div id="{{id}}" class="{{class}}" size="{{size}}" family="{{family}}">
@@ -16,7 +16,7 @@
     document.getElementsByTagName("head")[0].appendChild(link);
   }
 
-  registerElement('gfont', {
+  registerElement('gk-google-font', {
 
     init: function() {
       this.family = 'Freckle Face';
